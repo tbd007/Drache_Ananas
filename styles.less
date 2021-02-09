@@ -157,7 +157,7 @@ body {
 }
 
 .gamesection {
-	background: rgb(19, 19, 19);
+	background: rgb(49, 49, 49);
 	padding: 50px 0px;
 	border-radius: 7px;
 	margin-top: 70px;
@@ -238,13 +238,19 @@ body {
 }
 .img2 {
 	left: -26px;
-	top: 184px;
+	top: 144px;
 	width: 444px;
 }
 .img3 {
-	left: -16px;
+	left: 10px;
 	top: 174px;
-	width: 466px;
+	width: 385px;
+}
+
+.img4 {
+	left: 10px;
+	top: 144px;
+	width: 425px;
 }
 
 .name {
@@ -274,10 +280,13 @@ body {
 	.flex();
 	justify-content: center;
 	position: relative;
-	background: linear-gradient(rgba(0, 0, 0, 0.982), rgba(0, 0, 0, 0.864)),
+	background: linear-gradient(rgba(26, 36, 29, 0.982), rgba(24, 24, 24, 0.864)),
 		url("math-removebg-preview.png");
 	background-repeat: no-repeat;
 	background-size: cover;
+	div > p {
+		font-size: 20px;
+	}
 }
 
 .container-chev {
@@ -412,6 +421,7 @@ input {
 }
 
 .game {
+	background: rgb(42, 43, 43);
 	display: flex;
 	height: 97vh;
 	width: 96%;
@@ -419,7 +429,7 @@ input {
 	position: relative;
 	margin-bottom: 0px !important;
 	box-shadow: 5px 5px 10px black;
-	.bordered();
+
 	.gameview {
 		width: 20%;
 		position: right;

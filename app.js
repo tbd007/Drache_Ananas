@@ -23,3 +23,12 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+function dragoncave(){
+    let inpval= document.getElementById('inp');
+    if (inpval = 1) {
+        window.location.href = '/drachenhoehle.html';
+    } else {
+        alert('Das ist leider falsch...versuch es noch einmal!')
+    }
+}

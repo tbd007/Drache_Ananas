@@ -30,10 +30,10 @@
 				<p><b>DRACHE ANANAS RECHENABENTEUER</b></p>
 			</div>
 
-			<i class="fas fa-book-reader"></i>
-			<i class="fas fa-photo-video"></i>
-			<i class="fas fa-comments"></i>
-			<i class="fas fa-gem"></i>
+			<a href="#intro"><i class="fas fa-book-reader"></i></a>
+			<a href="#geschichten"><i class="fas fa-photo-video"></i></a>
+			<a href="#chat"><i class="fas fa-comments"></i></a>
+			<a href="#game"><i class="fas fa-gem"></i></a>
 			<i class="fas fa-sign-out-alt"></i>
 		</div>
 		<div class="header">
@@ -155,7 +155,7 @@
 			</div>
 		</section>
 
-		<div class="chat">
+		<div class="chat" id="chat">
 			<div id="myModal" class="modal">
 				<!-- Modal content -->
 				<div class="modal-content">
@@ -177,10 +177,14 @@
 						Wieviele Drachen müssen leider draußen bleiben?
 					</h2>
 
-					<input class="inp" type="text" placeholder="Deine Lösungszahl" /><i
-						class="fas fa-microphone"
-					></i>
+					<input
+						id="inp"
+						class="inp"
+						type="text"
+						placeholder="Deine Lösungszahl"
+					/><i class="fas fa-microphone"></i>
 					<button
+						onclick="dragoncave()"
 						style="
 							margin-left: 10px;
 							animation: none;
@@ -214,7 +218,7 @@
 			</div>
 		</div>
 
-		<section class="gamesection">
+		<section class="gamesection" id="game">
 			<div class="game">
 				<div class="stat1"></div>
 				<div class="stat2"></div>

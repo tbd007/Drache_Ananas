@@ -37,8 +37,8 @@ body {
 	background: linear-gradient(
 		rgb(38, 45, 68),
 		rgb(38, 45, 68),
-		palegreen,
-		white
+		rgb(38, 45, 68),
+		palegreen
 	);
 	background-size: cover;
 	font-family: "Kanit";
@@ -63,10 +63,11 @@ body {
 		font-size: 24px;
 		box-shadow: inset 5px -5px 10px rgb(69, 77, 71),
 			inset -5px 5px 10px rgb(34, 56, 41);
-		border: none;
+		border: 1px solid white;
 		animation: puls 2s linear alternate infinite;
 		margin: 10px 0px;
 		border-radius: 7px;
+		letter-spacing: 1.2px;
 	}
 	.inp {
 		padding: 5px 30px;
@@ -137,9 +138,9 @@ body {
 	.abctext2 {
 		margin-top: -45px;
 		h4 {
-			color: palegreen;
-			text-shadow: 2px 2px 4px rgb(49, 49, 49);
-			font-size: 50px;
+			color: rgb(41, 53, 87);
+			text-shadow: 2px 2px 4px rgb(130, 130, 130);
+			font-size: 48px;
 		}
 		p {
 			color: rgb(41, 53, 87);
@@ -337,7 +338,7 @@ body {
 	.flex();
 	justify-content: center;
 	position: relative;
-	background: linear-gradient(rgb(38, 45, 68), #81c3fad7),
+	background: linear-gradient(rgb(38, 45, 68), #416380d7),
 		url("math-removebg-preview.png");
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -402,10 +403,11 @@ body {
 
 .cavetitle {
 	font-family: Architects Daughter;
-	font-size: 56px;
+	font-size: 52px;
 	color: palegreen;
 	margin: 0;
 	text-shadow: 2px 2px 4px black;
+	margin-top: 100px !important;
 }
 
 @keyframes move {
@@ -452,7 +454,8 @@ body {
 	height: 100vh;
 }
 
-.modal {
+.modal,
+#vidmodal {
 	display: none; /* Hidden by default */
 	position: fixed; /* Stay in place */
 	z-index: 1; /* Sit on top */
@@ -463,6 +466,22 @@ body {
 	overflow: auto; /* Enable scroll if needed */
 	background-color: rgb(0, 0, 0); /* Fallback color */
 	background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+#vidmodal {
+	.modal-content {
+		background: rgb(37, 45, 71);
+		h2 {
+			color: rgb(253, 230, 54);
+			margin-bottom: 0px;
+		}
+		p {
+			color: white;
+		}
+		i {
+			color: rgb(253, 230, 54);
+		}
+	}
 }
 
 /* Modal Content/Box */
@@ -499,14 +518,16 @@ input {
 }
 
 .game {
-	background: url("http://www.fortimagination.com/wp-content/uploads/2015/02/Cloud-Web-Background5.jpg");
+	background: transparent;
 	display: flex;
 	height: 97vh;
-	width: 96%;
+	width: 90%;
 	margin: 0 auto;
 	position: relative;
 	margin-bottom: 0px !important;
-	box-shadow: 5px 5px 10px black;
+	box-shadow: inset 5px -5px 10px rgba(223, 222, 222, 0.371),
+		inset -5px 5px 10px rgba(223, 222, 222, 0.371);
+	border-radius: 10px;
 
 	.gametitle {
 		position: absolute;
@@ -515,12 +536,13 @@ input {
 		z-index: 3;
 		font-family: "Architects Daughter";
 		font-size: 40px;
-		text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.829);
-		color: rgba(255, 204, 0, 0.891);
+		text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.629);
+		color: palegreen;
 	}
 
 	.gameview {
 		width: 20%;
+		border-radius: 0px 10px 10px 0px;
 		position: right;
 		background: rgb(38, 45, 68);
 		box-shadow: inset 5px 5px 20px rgba(80, 79, 79, 0.384);
@@ -645,7 +667,6 @@ input {
 
 .friends {
 	height: 800px;
-
 	width: 40%;
 	margin: 70px auto;
 	justify-content: flex-start;
@@ -653,7 +674,7 @@ input {
 	.friend {
 		.flex();
 		position: relative;
-		background: rgb(38, 45, 68);
+		background: rgb(42, 53, 88);
 		justify-content: flex-start;
 		border: 2px solid white;
 		border-radius: 45px;
@@ -692,7 +713,7 @@ input {
 }
 
 .offline {
-	background: rgb(90, 128, 111) !important;
+	background: rgba(90, 128, 111, 0.377) !important;
 	.fa-battle-net {
 		color: rgb(170, 235, 144) !important;
 	}
@@ -721,8 +742,8 @@ input {
 	height: 70vh;
 	width: 70%;
 	border-radius: 90px;
-	box-shadow: inset -10px -10px 10px rgba(255, 255, 255, 0.582),
-		inset 5px 5px 15px white;
+	box-shadow: inset -10px -10px 10px rgba(49, 64, 104, 0.39),
+		inset 5px 5px 15px rgba(255, 255, 255, 0.692);
 	border: 1px solid rgb(208, 208, 218);
 	z-index: 4;
 	padding: 10px;

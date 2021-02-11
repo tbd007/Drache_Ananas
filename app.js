@@ -24,6 +24,19 @@ window.onclick = function(event) {
   }
 }
 
+var person = document.getElementById("person");
+var vidmodal= document.getElementById("vidmodal");
+window.onclick = function(event) {
+    if (event.target == vidmodal) {
+      vidmodal.style.display = "none";
+    }
+  }
+
+  person.onclick = function() {
+    vidmodal.style.display = "block";
+  }  
+
+
 function dragoncave(){
     let inpval= document.getElementById('inp');
     if (inpval = 1) {

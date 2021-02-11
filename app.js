@@ -26,11 +26,25 @@ window.onclick = function(event) {
 
 var person = document.getElementById("person");
 var vidmodal= document.getElementById("vidmodal");
+var gamebtn = document.getElementById("startgame");
+var gamemodal=document.getElementById("gamemodal");
+
 window.onclick = function(event) {
     if (event.target == vidmodal) {
       vidmodal.style.display = "none";
     }
   }
+
+  window.onclick = function(event) {
+    if (event.target == gamemodal) {
+      gamemodal.style.display = "none";
+    }
+}
+
+gamebtn.onclick = function(){
+    gamemodal.style.display="block";
+}
+
 
   person.onclick = function() {
     vidmodal.style.display = "block";
